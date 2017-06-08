@@ -130,6 +130,7 @@ class API(object):
 
         if duplicate_check is not None:
             params['duplicateCheck'] = duplicate_check
+        params['wfTrigger'] = 'true'
 
         response = self._request(
             'Leads/insertRecords',
